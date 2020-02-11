@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+https://github.com/rondinellimorais/rondinelli-cards.git"
   },
-  "author": "",
+  "author": {
+    "name": "Rondinelli Morais",
+    "email": "rondinellimorais@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rondinellimorais/rondinelli-cards/issues"
