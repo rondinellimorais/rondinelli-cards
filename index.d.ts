@@ -14,4 +14,9 @@ declare module '@rondinellimorais/cards' {
    * Screen principal do componente
    */
   export class Cards extends React.Component<RondProps> { }
+
+  /**
+   * ProfileNew
+   */
+  export class ProfileNew extends React.Component<RondProps> { }
 }
