@@ -9,7 +9,14 @@
   "peerDependencies": {
     "date-fns": "^2.9.0"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rondinellimorais/rondinelli-cards.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rondinellimorais/rondinelli-cards/issues"
+  },
+  "homepage": "https://github.com/rondinellimorais/rondinelli-cards#readme"
 }
