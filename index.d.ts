@@ -1,4 +1,4 @@
-declare module '@rondinelli/cards' {
+declare module '@rondinellimorais/cards' {
   import * as React from 'react';
 
   /**
