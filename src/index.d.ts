@@ -1,4 +1,4 @@
-declare module '@midway/home' {
+declare module '@midway/template' {
   /**
    * Micro front da home
    */

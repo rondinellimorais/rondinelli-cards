@@ -5,7 +5,7 @@ module.exports = {
       'module-resolver',
       {
         alias: {
-          '@midway/home': './src',
+          '@midway/template': './src',
         },
         cwd: 'babelrc',
       },

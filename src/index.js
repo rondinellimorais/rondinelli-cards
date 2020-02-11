@@ -3,7 +3,7 @@ import {Text, SafeAreaView, StyleSheet} from 'react-native';
 
 const Home = () => (
   <SafeAreaView style={styles.container}>
-    <Text style={styles.microFontText}>Home => Micro front</Text>
+    <Text style={styles.microFontText}>Template => Micro front</Text>
   </SafeAreaView>
 );
 
