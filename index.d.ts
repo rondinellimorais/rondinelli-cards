@@ -4,7 +4,7 @@ declare module '@rondinellimorais/cards' {
   /**
    * Props marota
    */
-  interface RondProps {
+  export interface RondProps {
     age?: number,
     name: string,
     method?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
@@ -13,5 +13,5 @@ declare module '@rondinellimorais/cards' {
   /**
    * Screen principal do componente
    */
-  class Cards extends React.Component<RondProps> { }
+  export class Cards extends React.Component<RondProps> { }
 }
