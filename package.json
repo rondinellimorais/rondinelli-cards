@@ -1,8 +1,9 @@
 {
-  "name": "@rondinelli/cards",
-  "version": "1.0.0",
+  "name": "@rondinellimorais/cards",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
+  "types": "index.d.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
