@@ -1,0 +1,42 @@
+{
+  "name": "@midway/home",
+  "version": "0.0.1",
+  "private": true,
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "test": "jest",
+    "lint": "eslint ./",
+    "rebuild": "yarn clean && yarn build",
+    "clean": "yarn clean:android && yarn clean:ios && rm -rf node_modules",
+    "clean:android": "rm -rf android/app/build && rm -rf android/build && rm -rf android/.gradle && rm -rf android/build.gradle-e",
+    "clean:ios": "rm -rf ios/build && rm -rf ios/Pods && rm -rf ios/*.xcworkspace",
+    "build": "yarn && yarn build:android && yarn build:ios",
+    "build:android": "npx jetifier",
+    "build:ios": "cd ios/ && pod install"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": ">=0.46"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^0.0.7",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-root-import": "^6.4.1",
+    "react-test-renderer": "16.9.0",
+    "react": "16.9.0",
+    "react-native": "0.61.5"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
