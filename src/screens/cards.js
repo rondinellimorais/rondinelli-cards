@@ -1,20 +1,24 @@
 import React from 'react';
 import {Text, SafeAreaView, TouchableOpacity} from 'react-native';
 
-const ProfileNew = ({navigation: {navigate}}) => (
+const Cards = ({navigation: {navigate}}) => (
   <SafeAreaView
-    style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    style={{
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}>
     <Text
       style={{
-        color: 'blue',
+        color: 'red',
         fontSize: 18,
         fontWeight: 'bold',
         marginVertical: 20,
       }}>
-      Veio para o Profile tranquilo
+      Home
     </Text>
     <TouchableOpacity
-      onPress={() => navigate('Cards')}
+      onPress={() => navigate('ProfileNew')}
       style={{
         width: '90%',
         paddingVertical: 20,
@@ -23,9 +27,9 @@ const ProfileNew = ({navigation: {navigate}}) => (
         alignItems: 'center',
         borderRadius: 10,
       }}>
-      <Text>Back</Text>
+      <Text>Touch me!</Text>
     </TouchableOpacity>
   </SafeAreaView>
 );
 
-export default ProfileNew;
+export default Cards;

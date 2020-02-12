@@ -1,7 +1,7 @@
 /**
  * @format
  */
-import { AppRegistry } from 'react-native';
-import { Cards } from '@rondinellimorais/cards';
+import {AppRegistry} from 'react-native';
+import App from './app';
 
-AppRegistry.registerComponent('example', () => Cards);
+AppRegistry.registerComponent('example', () => App);

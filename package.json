@@ -20,7 +20,10 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": ">=0.46"
+    "react-native": ">=0.46",
+    "react-navigation": ">=4.1.1",
+    "react-native-gesture-handler": ">=1.5.3",
+    "react-native-screens": ">=2.0.0-alpha.32"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -34,7 +37,10 @@
     "babel-plugin-root-import": "^6.4.1",
     "react-test-renderer": "16.9.0",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-navigation": "^4.1.1",
+    "react-native-gesture-handler": "^1.5.3",
+    "react-native-screens": "^2.0.0-alpha.32"
   },
   "jest": {
     "preset": "react-native"
