@@ -1,3 +1,7 @@
+# OSX
+#
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -33,6 +37,9 @@ rn-cli.config.js
 .prettierignore
 .eslintrc
 .eslintignore
+.flowconfig
 .yarnrc
+.eslintrc.js
 ios
 android
+metro.config.js
