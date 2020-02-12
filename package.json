@@ -1,6 +1,6 @@
 {
   "name": "@rondinellimorais/cards",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "description": "",
   "main": "src/index.js",
   "types": "src/index.d.js",
@@ -10,22 +10,24 @@
     "ios": "react-native run-ios",
     "test": "jest",
     "lint": "eslint ./",
-    "rebuild": "yarn clean && yarn build",
-    "clean": "yarn clean:android && yarn clean:ios && rm -rf node_modules",
-    "clean:android": "rm -rf android/app/build && rm -rf android/build && rm -rf android/.gradle && rm -rf android/build.gradle-e",
-    "clean:ios": "rm -rf ios/build && rm -rf ios/Pods && rm -rf ios/*.xcworkspace",
-    "build": "yarn && yarn build:android && yarn build:ios",
+    "rebuild": "yarn clean; yarn build",
+    "clean": "yarn clean:android; yarn clean:ios; rm -rf node_modules",
+    "clean:android": "rm -rf android/app/build; rm -rf android/build; rm -rf android/.gradle; rm -rf android/build.gradle-e",
+    "clean:ios": "rm -rf ios/build; rm -rf ios/Pods; rm -rf ios/*.xcworkspace",
+    "build": "yarn; yarn build:android; yarn build:ios",
     "build:android": "npx jetifier",
-    "build:ios": "cd ios/ && pod install"
+    "build:ios": "cd ios/; pod install"
   },
   "peerDependencies": {
     "react": "*",
+    "react-native": ">=0.60.0",
     "react-navigation": ">=4.1.1",
     "react-native-gesture-handler": ">=1.5.3",
     "date-fns": ">=2.0.0"
   },
   "dependencies": {
-    "react-native": "^0.46",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
     "date-fns": "^2.0.0"
   },
   "devDependencies": {
@@ -39,7 +41,6 @@
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-root-import": "^6.4.1",
     "react-test-renderer": "16.9.0",
-    "react": "16.9.0",
     "react-navigation": "^4.1.1",
     "react-native-gesture-handler": "^1.5.3",
     "react-native-screens": "^2.0.0-alpha.32"
