@@ -34,3 +34,5 @@ rn-cli.config.js
 .eslintrc
 .eslintignore
 .yarnrc
+ios
+android
