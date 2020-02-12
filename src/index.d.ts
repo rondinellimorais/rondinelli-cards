@@ -1,21 +1,22 @@
-declare module '@midway/template' {
-  /**
-   * Micro front da home
-   */
-
+declare module '@rondinellimorais/cards' {
   import * as React from 'react';
 
   /**
-   * Props da home
+   * Props marota
    */
-  interface HomeProps {
-    name?: string,
+  export interface RondProps {
     age?: number,
-    lastName: string
+    name: string,
+    method?: 'flex-start' | 'flex-end' | 'center' | 'space-between' | 'space-around' | 'space-evenly';
   }
 
   /**
-   * Home do app
+   * Screen principal do componente
    */
-  export class Home extends React.Component<HomeProps> { }
+  export class Cards extends React.Component<RondProps> { }
+
+  /**
+   * ProfileNew
+   */
+  export class ProfileNew extends React.Component<RondProps> { }
 }

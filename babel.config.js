@@ -5,7 +5,7 @@ module.exports = {
       'module-resolver',
       {
         alias: {
-          '@midway/template': './src',
+          '@rondinellimorais/cards': './src',
         },
         cwd: 'babelrc',
       },

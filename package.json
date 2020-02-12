@@ -1,9 +1,9 @@
 {
-  "name": "@midway/template",
-  "version": "0.0.1",
-  "private": true,
+  "name": "@rondinellimorais/cards",
+  "version": "1.5.0",
+  "description": "",
   "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "types": "src/index.d.js",
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
@@ -38,5 +38,18 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rondinellimorais/rondinelli-cards.git"
+  },
+  "author": {
+    "name": "Rondinelli Morais",
+    "email": "rondinellimorais@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rondinellimorais/rondinelli-cards/issues"
+  },
+  "homepage": "https://github.com/rondinellimorais/rondinelli-cards#readme"
 }

@@ -1,7 +1,7 @@
 /**
  * @format
  */
-import {AppRegistry} from 'react-native';
-import Home from '@midway/template';
+import { AppRegistry } from 'react-native';
+import { Cards } from '@rondinellimorais/cards';
 
-AppRegistry.registerComponent('example', () => Home);
+AppRegistry.registerComponent('example', () => Cards);

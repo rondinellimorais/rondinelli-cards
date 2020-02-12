@@ -1,23 +1,16 @@
 import React from 'react';
-import {Text, SafeAreaView, StyleSheet} from 'react-native';
+import {Text, SafeAreaView, TouchableOpacity} from 'react-native';
 
-const Home = () => (
-  <SafeAreaView style={styles.container}>
-    <Text style={styles.microFontText}>Template => Micro front</Text>
+const Cards = ({navigation: {navigate}}) => (
+  <SafeAreaView
+    style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <Text style={{color: 'red', fontSize: 18, fontWeight: 'bold'}}>Home</Text>
+    <TouchableOpacity
+      onPress={() => navigate('profile-new')}
+      style={{paddingVertical: 20, borderWidth: 1, borderColor: 'blue'}}>
+      <Text>Profile</Text>
+    </TouchableOpacity>
   </SafeAreaView>
 );
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignContent: 'center',
-  },
-  microFontText: {
-    fontWeight: 'bold',
-    color: 'blue',
-  },
-});
-
-export default Home;
+export default Cards;
